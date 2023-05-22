@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3D087B;
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 95vh;
+}
+
+.container_1{
+    display: flex;
+    flex-direction: column;
+    width: 566px;
+    justify-content: space-between;
+}
+
+.itinerary{
+    height: 363px;
+    width: 566px;
+    background-color: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 25px;
+}
+
+.quater{
+    width: 517px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.quater label{
+    width: 141px;
+    align-self: center;
+    font: normal 18px/28px Manrope;
+}
+.quater select{
+    width: 281px;
+    height: 45px;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    padding: 10px;
+}
+.dash{
+    height: 30px;
+    border-left: 2px solid rgb(213, 213, 213);
+    margin-left: 18px;
+}
+
+.greetings{
+    background-color: #FFFFFF52;
+    border-radius: 10px;
+    height: 77px;
+    padding: 21px 25px;
+    font: normal 900 27px/34px Bauhaus Hv BT;
+    color: #FFFFFF;
+}
+
+.set_alarm{
+    width: 299px;
+    height: 50px;
+    text-align: center;
+    font: normal normal 600 24px/38px Manrope;
+    color: #FFFFFF;
+    border-radius: 4px;
+    background-image: linear-gradient(113deg , #6E54EC 0%, #fc5eff 80%);
+}
+.set_alarm:hover{
+    background-image: linear-gradient(113deg , #fc5eff  0%,#6E54EC 80%);
+}
+
+.schedule{
+    margin-top: -80px;
+    align-self: flex-end;
+    background-color: #FFFFFF52;
+    width: 253px;
+    height: 117px;
+    border-radius: 10px;
+    padding: 10px;
+    font: bold 15px/25px Manrope;
+    color: #F25CFE;
+}
+
+.container_2{
+    display: flex;
+    flex-direction: column;
+    width: 536px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+.real_time{
+    position: relative;
+}
+.timecard_1{
+    background-color: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    width: 82px;
+    height: 90px;
+}
+.time_1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #3D087B;
+    padding: 32px 0px;
+}
+.timing{
+    background-image: url(./timeline.svg);
+    color: #8A11BF;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px 12px 13px 12px;
+}
+.timing>span{
+    font-size: 23px;
+    color: #5F0089;
+}
+.dawn{
+    background-image: url(./AM_svg.svg);
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 24px 10px;
+}
+.timecard_2{
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    width: 416px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    opacity: 0.71;  
+    z-index: -1;
+}
+.timecard_3{
+    position: absolute;
+    top: 25px;
+    left: 95px;
+    width: 379px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    opacity: 0.22;
+    z-index: -2;
+}
+
+.message{
+    background-color: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    width: 536px;
+    height: 118px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #8E53F0;
+    padding: 40px 22px;
+}
+

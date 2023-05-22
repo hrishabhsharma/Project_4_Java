@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Reminder Clock App</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container_1">
+
+            <div class="logo">
+                <img src="./clock_logo.png" alt="clock">
+            </div>
+
+            <div class="itinerary">
+                <div class="quater">
+                    <img src="./wake_up.svg" alt="wake_up">
+                    <label for="wakeup" >Set wake up time</label>
+                    <select name="timer" id="wakeup">
+                        <option value="8 AM - 9 AM">8 AM - 9 AM</option>
+                        <option value="9 AM - 10 AM">9 AM - 10 AM</option>
+                        <option value="10 AM - 11 AM" selected>10 AM - 11 AM</option>
+                        <option value="11 AM - 12 PM">11 AM - 12 PM</option>
+                    </select>
+                </div>
+                <div class="dash"></div>
+                <div class="quater">
+                    <img src="./lunch_time.svg" alt="lunch_time">
+                    <label for="lunch" >Set lunch time</label>
+                    <select name="timer" id="lunch">
+                        <option value="12 PM - 1 PM">12 PM - 1 PM</option>
+                        <option value="1 PM - 2 PM">1 PM - 2 PM</option>
+                        <option value="2 PM - 3 PM">2 PM - 3 PM</option>
+                        <option value="3 PM - 4 PM">3 PM - 4 PM</option>
+                    </select>
+                </div>
+                <div class="dash"></div>
+                <div class="quater">
+                    <img src="./nap_time.svg" alt="nap_time">
+                    <label for="nap" >Set nap time</label>
+                    <select name="timer" id="nap">
+                        <option value="4 PM - 5 PM">4 PM - 5 PM</option>
+                        <option value="5 PM - 6 PM">5 PM - 6 PM</option>
+                        <option value="6 PM - 7 PM">6 PM - 7 PM</option>
+                        <option value="7 PM - 8 PM">7 PM - 8 PM</option>
+                    </select>
+                </div>
+                <div class="dash"></div>
+                <div class="quater">
+                    <img src="./wake_up.svg" alt="night_time">
+                    <label for="night" >Set night time</label>
+                    <select name="timer" id="night">
+                        <option value="8 PM - 9 PM">8 PM - 9 PM</option>
+                        <option value="9 PM - 10 PM">9 PM - 10 PM</option>
+                        <option value="10 PM - 11 PM">10 PM - 11 PM</option>
+                        <option value="11 PM - 12 AM">11 PM - 12 AM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="greetings">GOOD MORNING!! WAKE UP!!</div>
+
+            <div class="set_alarm">Set Alarm</div>
+
+            <div class="schedule">Wake Up Time : 10AM - 11AM <br> Lunch Time : 12PM - 1PM <br> Nap Time : 4PM - 5PM <br> Night Time : 8PM-9AM</div>
+
+        </div>
+
+        <div class="container_2">
+
+            <div class="real_time">
+                <div class="timecard_1">
+                    <div class="time time_1">TIME</div>
+                    <div class="time timing">10 <span>hours</span></div>
+                    <div class="time timing">00 <span>mins</span></div>
+                    <div class="time timing">01 <span>secs</span></div>
+                    <div class="time dawn">AM</div>
+                </div>
+                <div class="timecard_2"></div>
+                <div class="timecard_3"></div>
+            </div>
+            <div class="message">GRAB SOME HEALTHY BREAKFAST!!!</div>
+            <div class="activity"><img src="./Component.svg" alt="activity"></div>
+        </div>
+    </div>
+</body>
+</html>

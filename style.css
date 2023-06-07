@@ -4,14 +4,13 @@
 
 body{
     background-color: #3D087B;
-
 }
 
 .main{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 95vh;
+    height: 43em;
 }
 
 .container_1{
@@ -58,9 +57,10 @@ body{
 }
 
 .greetings{
+    text-align: center;
     background-color: #FFFFFF52;
     border-radius: 10px;
-    height: 77px;
+    height: 80px;
     padding: 21px 25px;
     font: normal 900 27px/34px Bauhaus Hv BT;
     color: #FFFFFF;
@@ -170,8 +170,58 @@ body{
     width: 536px;
     height: 118px;
     font-size: 25px;
+    text-align: center;
     font-weight: 900;
     color: #8E53F0;
     padding: 40px 22px;
 }
 
+
+@media screen and (min-width : 320px) and (max-width : 430px) {
+    .main{
+        display: block;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .container_1{
+        display: block;
+        height: 80em;
+    }
+    .container_2{
+        display: block;
+        margin-left: 12px;
+        height: 0px;
+    }
+    .real_time{
+        top: -73em;
+    }
+    .message , .activity{
+        position: relative;
+        top: -45em;
+    }
+    .itinerary{
+        margin-top: 340px;
+        margin-left: 12px;
+        width: 536px;
+    }
+    .quater{
+        width: 500px;
+    }
+    .greetings{
+        margin-top: 385px;
+        margin-left: 12px;
+        width: 536px;
+    }
+    .set_alarm{
+        margin-top: 40px;
+        margin-left: 12px;
+        width: 50%;
+    }
+    .schedule{
+        margin-top: -70px;
+        margin-left: 310px;
+        width: 240px;
+    }
+
+}

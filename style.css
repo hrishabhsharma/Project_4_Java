@@ -21,7 +21,7 @@ body{
 }
 
 .itinerary{
-    height: 363px;
+    height: 350px;
     width: 566px;
     background-color: #ffffff;
     border: 1px solid #EDEDED;
@@ -175,43 +175,40 @@ body{
     color: #8E53F0;
     padding: 40px 22px;
 }
+.activity{
+    margin-top: -50px;
+}
 
 
 @media screen and (min-width : 320px) and (max-width : 430px) {
-    .main{
+    .main , .container_1 , .container_2{
         display: block;
     }
     .logo{
         margin-left: 50px;
     }
-    .container_1{
-        display: block;
-        height: 80em;
-    }
     .container_2{
-        display: block;
         margin-left: 12px;
         height: 0px;
     }
     .real_time{
-        top: -73em;
+        top: -79em;
     }
     .message , .activity{
         position: relative;
-        top: -45em;
+        top: -48em;
     }
-    .itinerary{
-        margin-top: 340px;
+    .itinerary , .greetings{
+        margin-top: 370px;
         margin-left: 12px;
         width: 536px;
     }
     .quater{
         width: 500px;
     }
-    .greetings{
-        margin-top: 385px;
-        margin-left: 12px;
-        width: 536px;
+    .quater>label , .quater>select{
+        font-size: 20px;
+        width: 220px;
     }
     .set_alarm{
         margin-top: 40px;
@@ -223,5 +220,78 @@ body{
         margin-left: 310px;
         width: 240px;
     }
+}
 
+@media screen and (min-width : 431px) and (max-width : 768px) {
+    .main{
+        justify-content: space-between;
+    }
+    /* Container 1 */
+
+    .container_1 , .itinerary{
+        width: 350px;
+        margin-left: 0px;
+    }
+    .itinerary{
+        padding: 14px 12px;
+    }
+    .quater{
+        width: 330px;
+    }
+    .quater select{
+        width: 130px;
+    }
+    .greetings{
+        font-size: 22px;
+        line-height: 29px;
+        padding: 25px;
+    }
+    .set_alarm{
+        width: 140px;
+        font-size: 20px;
+    }
+    .schedule{
+        width: 200px;
+        height: 110px;
+    }
+
+    /* Container 2 */
+
+    .container_2{
+        width: 380px;
+        margin-left: 10px;
+    }
+    .time{
+        width: 61px;
+        height: 80px;
+    }
+    .timing{
+        font-size: 30px;
+        line-height: 29px;
+        padding: 13px 10px;
+    }
+    .timing>span{
+        font-size: 20px;
+    }
+    .dawn{
+        font-size: 30px;
+    }
+    .timecard_2{
+        width: 280px;
+        left: 50px;
+    }
+    .timecard_3{
+        width: 242px;
+        left: 70px;
+    }
+    .message{
+        width: 380px;
+        font-size: 20px;
+        padding: 40px 10px;
+    }
+    .activity{
+        width: 380px;
+        margin-top: -50px;
+        transform: scale(70%) translate(-20% , 0); 
+    }
 }

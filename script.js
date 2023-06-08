@@ -32,13 +32,13 @@ function display_message(){
     let time = new Date()
     let hrs = time.getHours()
     
-    if(hrs>0 && hrs<10){
+    if(hrs>=0 && hrs<10){
         msg.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
     }
-    else if(hrs>10 && hrs<14){
+    else if(hrs>=10 && hrs<14){
         msg.innerText = "LET'S HAVE SOME LUNCH !!!"
     }
-    else if(hrs>14 && hrs<20){
+    else if(hrs>=14 && hrs<20){
         msg.innerText = "STOP YAWNING , GET SOME TEA.. \n   ITS JUST EVENING!!!"
         msg.style.padding = "30px 22px"
     }
